@@ -1,0 +1,59 @@
+/*=============== HOME SECTION ===============*/
+
+.home {
+    position: relative;
+    padding: 4rem 0 5rem;
+    row-gap: 5rem;
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home__data {
+    align-self: center;
+}
+
+.home__title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.home__title--highlight {
+    color: hsl(224, 56%, 12%);
+}
+
+.home__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.home__social-icon {
+    font-size: 1.5rem;
+    color: hsl(224, 56%, 12%);
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+.home__social-icon:hover {
+    color: hsl(224, 89%, 60%);
+}
+
+.home__image {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.home__blob {
+    fill: hsl(224, 89%, 60%);
+    width: 260px;
+}
+
+.home__blob-img {
+    width: 360px;
+}
