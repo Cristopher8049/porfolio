@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Cristopher</title>
     <link rel="stylesheet" href="./blocks/styles.css">
+    <script src="app.js" defer type="module"></script>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -19,18 +20,35 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link nav__link--active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="/" class="nav__link nav__link--active">Home</a></li>
+                    <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="/projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+
                 </ul>
+
             </div>
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
+
+    <!-- Temporal, solo para la tarea de ejemplo -->
+    <main id="app" class="app"></main>
+
+    <section class="home" id="home">
+        <div class="home__container">
+            <div class="home__content">
+                <h1 class="home__title">Hello</h1>
+                <p class="home__description">I'm Cristopher O'Connor </p>
+            </div>
+            <div class="home__image">
+                <img src="./assets/img/me.png" alt="Cristopher O'Connor" class="home__img">
+            </div>
+        </div>
+    </section>
 
     <section class="blog section" id="blog">
         <div class="blog__container">
@@ -42,7 +60,8 @@
                     <div class="blog-post__content">
                         <p class="blog-post__date">Feb 21, 2025</p>
                         <h3 class="blog-post__title">Quantum computers closer than ever</h3>
-                        <p class="blog-post__excerpt">Microsoft has just unveiled Majorana 1, its chip based on a new
+                        <p class="blog-post__excerpt">Microsoft has just unveiled Majorana 1, its chip based on a
+                            new
                             topological core architecture that represents a breakthrough in the field of quantum
                             computing.</p>
                         <div class="blog-post__footer">

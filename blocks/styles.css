@@ -5,7 +5,7 @@
 @import url('./contact.css');
 @import url('./blog.css');
 @import url('./footer.css');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
     padding: 0;
@@ -14,7 +14,7 @@
 }
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 5rem;
-    background-color: #FFFDF6;
+    background-color: #ffffff;
     padding-top: 2.5rem;
 }
 
@@ -33,10 +33,14 @@ a {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     box-sizing: border-box;
+}
+
+.app {
+    padding-top: 4.5rem;
 }

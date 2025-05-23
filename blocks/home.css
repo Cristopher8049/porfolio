@@ -1,59 +1,37 @@
-/*=============== HOME SECTION ===============*/
-
 .home {
-    position: relative;
-    padding: 4rem 0 5rem;
-    row-gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh + 72px);
+}
+
+.home__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .home__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.home__data {
-    align-self: center;
+    max-width: 40%;
 }
 
 .home__title {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-}
-
-.home__title--highlight {
-    color: hsl(224, 56%, 12%);
-}
-
-.home__social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.home__social-icon {
-    font-size: 1.5rem;
-    color: hsl(224, 56%, 12%);
+    font-size: 10rem;
     margin-bottom: 1rem;
-    transition: color 0.3s;
 }
 
-.home__social-icon:hover {
-    color: hsl(224, 89%, 60%);
+.home__description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .home__image {
-    position: relative;
-    margin-top: 3rem;
+    max-width: 60%;
 }
 
-.home__blob {
-    fill: hsl(224, 89%, 60%);
-    width: 260px;
-}
-
-.home__blob-img {
-    width: 360px;
+.home__img {
+    width: 100%;
+    border-radius: 10px;
 }
