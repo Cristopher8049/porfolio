@@ -9,7 +9,8 @@
             "alt": "Web Development Trends"
         },
         "link": "#",
-        "likes": 0
+        "likes": 0,
+        "liked": false
     },
     {
         "id": 2,
@@ -21,6 +22,7 @@
             "alt": "Portfolio Tips"
         },
         "link": "#",
-        "likes": 0
+        "likes": 0,
+        "liked": false
     }
 ]

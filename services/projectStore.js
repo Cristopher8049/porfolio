@@ -10,6 +10,10 @@ class ProjectStore {
         this.init();
     }
 
+    find(id) {
+        return this.#projects.find(project => project.id == id);
+    }
+
     addLike(id) {
         const project = this.find(id);
         project.likes = Number(project.likes) + 1;
@@ -52,7 +56,7 @@ class ProjectStore {
     }
 }
 
-Object.assign(ProjectStore.prototype, observerMixin)
+Object.assign(ProjectStore.prototype, observerMixin);
 
 
 

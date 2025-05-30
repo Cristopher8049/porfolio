@@ -95,13 +95,14 @@
     transition: color 0.3s ease;
 }
 
+.blog-post__like-btn .bxs-heart {
+    color: #ff5252;
+}
+
 .blog-post__like-btn:hover {
     color: #ff5252;
 }
 
-.blog-post__like-btn--active {
-    color: #ff5252;
-}
 
 .blog-post__like-count {
     font-size: 0.875rem;

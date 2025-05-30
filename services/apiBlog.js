@@ -1,5 +1,5 @@
 const apiBlog = {
-    async getBlog() {
+    async getPosts() {
         try {
             const response = await fetch("../data/blog.json");
 
