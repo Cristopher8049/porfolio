@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "date": "Feb 21, 2025",
+        "title": "Quantum computers closer than ever",
+        "excerpt": "Microsoft has just unveiled Majorana 1, its chip based on a new topological core architecture that represents a breakthrough in the field of quantum computing.",
+        "image": {
+            "src": "https://static.scientificamerican.com/dam/m/282603ad446e57c2/original/Majorana_1.jpg?m=1740061951.711&w=1350",
+            "alt": "Web Development Trends"
+        },
+        "link": "#",
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "date": "April 29, 2025",
+        "title": "What’s next in computing is generative and quantum",
+        "excerpt": "At Think 2025, IBM Research leaders explored generative computing, and outlined that quantum advantage is just around the corner.",
+        "image": {
+            "src": "https://cdn.prod.website-files.com/639a397b9711984d91a35d74/645b6ef5d6e6c41a88b087e7_1591d444.png",
+            "alt": "Portfolio Tips"
+        },
+        "link": "#",
+        "likes": 0
+    }
+]

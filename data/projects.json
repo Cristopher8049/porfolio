@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Quantum Portfolio",
+        "description": "A personal portfolio built with HTML, CSS, and JavaScript, highlighting quantum research projects.",
+        "image": {
+            "src": "https://1qbit.com/wp-content/uploads/2021/06/1QBit-Blog-A-Bit-or-Two-About-Qubits.png",
+            "alt": "Project 1"
+        },
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "QSim Lab",
+        "description": "An interactive quantum simulator for educational purposes, visualizing gates and entanglement.",
+        "image": {
+            "src": "https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/818851/rigetti-computing-versus-d-wave-quantum-stocks-2025.jpg&w=2000&op=resize",
+            "alt": "Project 2"
+        },
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "title": "Quantum Notes",
+        "description": "A markdown-powered note-taking app tailored for researchers in quantum computing.",
+        "image": {
+            "src": "https://filecache.mediaroom.com/mr5mr_ibmnewsroom/195721/Utilities_release_Banner.jpg",
+            "alt": "Project 3"
+        },
+        "link": "#"
+    }
+]

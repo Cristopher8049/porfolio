@@ -13,7 +13,7 @@
 <body>
 
     <header class="header">
-        <nav class="nav container">
+        <nav class="nav nav__container">
             <div class="nav__brand">
                 <a href="#" class="nav__logo">Cristopher O'Connor</a>
             </div>
@@ -35,20 +35,41 @@
         </nav>
     </header>
 
-    <!-- Temporal, solo para la tarea de ejemplo -->
-    <main id="app" class="app"></main>
 
-    <section class="home" id="home">
-        <div class="home__container">
-            <div class="home__content">
-                <h1 class="home__title">Hello</h1>
-                <p class="home__description">I'm Cristopher O'Connor </p>
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Hello</h1>
+                <p class="hero__description">- I'm Cristopher O'Connor </p>
             </div>
-            <div class="home__image">
-                <img src="./assets/img/me.png" alt="Cristopher O'Connor" class="home__img">
+            <div class="hero__image">
+                <img src="./assets/img/me.png" alt="Cristopher O'Connor" class="hero__img">
             </div>
         </div>
     </section>
+
+    <section id="about" class="about section">
+        <div class="about__container">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__text">
+                I’m Cristopher O’Connor, a passionate software engineer currently specializing in quantum computing.
+                With a strong foundation in software development and a deep curiosity for emerging technologies, I’m
+                focused on exploring the frontiers of computation and building solutions that bridge today’s challenges
+                with tomorrow’s potential.
+            </p>
+        </div>
+    </section>
+
+    <template id="projects-template">
+        <section id="projects" class="projects section">
+            <div class="projects__container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__grid"></div>
+            </div>
+        </section>
+    </template>
+
+    <project-list></project-list>
 
     <section class="blog section" id="blog">
         <div class="blog__container">
@@ -138,7 +159,6 @@
         </div>
     </section>
 
-    <script src="./main.js"></script>
 </body>
 
 </html>

@@ -20,26 +20,6 @@ const router = {
             history.pushState({ route }, "", route);
         }
 
-        switch (route) {
-            case "/":
-                document.querySelector("#app").innerHTML = "<h1>Home</h1>";
-                break;
-            case "/about":
-                document.querySelector("#app").innerHTML = "<h1>About</h1>";
-                break;
-            case "/projects":
-                document.querySelector("#app").innerHTML = "<h1>Projects</h1>";
-                break;
-            case "/contact":
-                document.querySelector("#app").innerHTML = "<h1>Contact</h1>";
-                break;
-            case "/blog":
-                document.querySelector("#app").innerHTML = "<h1>Blog</h1>";
-                break;
-            default:
-                document.querySelector("#app").innerHTML = "<h1>404 Not Found</h1>";
-        }
-
     }
 
 };
