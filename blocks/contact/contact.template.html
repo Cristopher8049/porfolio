@@ -1,0 +1,40 @@
+<style>
+    @import url('/blocks/styles.css');
+</style>
+
+<section class="contact section" id="contact">
+    <div class="contact__container">
+        <h2 class="contact__title">Contact</h2>
+
+        <form action="#" class="contact-form" id="contact-form">
+            <div class="contact-form__group">
+                <label for="name" class="contact-form__label">Name</label>
+                <input type="text" id="name" name="name" class="contact-form__input" placeholder="Your name" required>
+            </div>
+
+            <div class="contact-form__group">
+                <label for="email" class="contact-form__label">Email</label>
+                <input type="email" id="email" name="email" class="contact-form__input" placeholder="Your email address"
+                    required>
+            </div>
+
+            <div class="contact-form__group">
+                <label for="subject" class="contact-form__label">Subject</label>
+                <input type="text" id="subject" name="subject" class="contact-form__input"
+                    placeholder="Subject of your message" required>
+            </div>
+
+            <div class="contact-form__group">
+                <label for="message" class="contact-form__label">Message</label>
+                <textarea id="message" name="message" class="contact-form__textarea" placeholder="Your message"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="contact-form__button">Send Message</button>
+
+            <div class="contact-form__message contact-form__message--success" id="success-message">
+                Message sent successfully!
+            </div>
+        </form>
+    </div>
+</section>

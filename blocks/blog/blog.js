@@ -1,40 +1,37 @@
+import BaseHTMLElement from "../base/BaseHTMLElement.js";
 import BlogStore from "../../services/blogStore.js";
 import LocalStorageBlog from "../../services/localStorageBlog.js";
 
-class BlogListComponent extends HTMLElement {
+class BlogListComponent extends BaseHTMLElement {
     constructor() {
         super();
         this.store = BlogStore.getInstance();
-        this.store.subscribe(() => this.render());
+        this.attachShadow({ mode: "open" });
     }
 
-    async connectedCallback() {
-        // Clona template desde el DOM
-        const tmpl = document.getElementById('blog-template');
-        if (!tmpl) {
-            console.error('Template #blog-template not found');
-            return;
-        }
-        const clone = tmpl.content.cloneNode(true);
-        this.appendChild(clone);
+    connectedCallback() {
+        this.store.subscribe(() => this.render());
+        this.init();
+    }
 
-        // Contenedor de posts
-        this.grid = this.querySelector('.blog__grid');
+    async init() {
+        await this.loadHTML("/blocks/blog/blog.template.html");
 
-        // Carga datos (LS o remoto) y renderiza
+        this.grid = this.shadowRoot.querySelector(".blog__grid");
+
         await LocalStorageBlog.loadPosts();
         this.render();
     }
 
     render() {
+        if (!this.grid) return;
+
         const posts = this.store.allPosts;
-        this.grid.innerHTML = '';
+        this.grid.innerHTML = "";
 
-
-
-        posts.forEach(post => {
-            const article = document.createElement('article');
-            article.className = 'blog-post';
+        posts.forEach((post) => {
+            const article = document.createElement("article");
+            article.className = "blog-post";
             article.dataset.id = post.id;
 
             article.innerHTML = `
@@ -44,10 +41,10 @@ class BlogListComponent extends HTMLElement {
           <h3 class="blog-post__title">${post.title}</h3>
           <p class="blog-post__excerpt">${post.excerpt}</p>
           <div class="blog-post__footer">
-            <a href="${post.link}" class="blog-post__link">Read More</a>
+            <a href="${post.link}" class="blog-post__link" target="_blank" rel="noopener noreferrer">Read More</a>
             <div class="blog-post__like">
               <button class="blog-post__like-btn" aria-label="Like post">
-               <i class='bx ${post.liked ? 'bxs-heart' : 'bx-heart'}'></i>
+                <i class='bx ${post.liked ? "bxs-heart" : "bx-heart"}'></i>
               </button>
               <span class="blog-post__like-count">${post.likes}</span>
             </div>
@@ -55,10 +52,8 @@ class BlogListComponent extends HTMLElement {
         </div>
       `;
 
-            // Toggle like/unlike con contador
-
-            const likeBtn = article.querySelector('.blog-post__like-btn');
-            likeBtn.addEventListener('click', () => {
+            const likeBtn = article.querySelector(".blog-post__like-btn");
+            likeBtn.addEventListener("click", () => {
                 if (post.liked) {
                     this.store.removeLike(post.id);
                 } else {
@@ -71,4 +66,5 @@ class BlogListComponent extends HTMLElement {
     }
 }
 
-customElements.define('blog-list', BlogListComponent);
+customElements.define("blog-list", BlogListComponent);
+export default BlogListComponent;

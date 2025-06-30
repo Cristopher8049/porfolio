@@ -7,118 +7,21 @@
     <title>Portfolio | Cristopher</title>
     <link rel="stylesheet" href="./blocks/styles.css">
     <script src="app.js" defer type="module"></script>
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
+    <navbar-component></navbar-component>
 
-    <header class="header">
-        <nav class="nav nav__container">
-            <div class="nav__brand">
-                <a href="#" class="nav__logo">Cristopher O'Connor</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="/" class="nav__link nav__link--active">Home</a></li>
-                    <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="/projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
-
-                </ul>
-
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-
-    <section class="hero" id="home">
-        <div class="hero__container">
-            <div class="hero__content">
-                <h1 class="hero__title">Hello</h1>
-                <p class="hero__description">- I'm Cristopher O'Connor </p>
-            </div>
-            <div class="hero__image">
-                <img src="./assets/img/me.png" alt="Cristopher O'Connor" class="hero__img">
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about section">
-        <div class="about__container">
-            <h2 class="section__title">About Me</h2>
-            <p class="about__text">
-                I’m Cristopher O’Connor, a passionate software engineer currently specializing in quantum computing.
-                With a strong foundation in software development and a deep curiosity for emerging technologies, I’m
-                focused on exploring the frontiers of computation and building solutions that bridge today’s challenges
-                with tomorrow’s potential.
-            </p>
-        </div>
-    </section>
-
-    <template id="projects-template">
-        <section id="projects" class="projects section">
-            <div class="projects__container">
-                <h2 class="section__title">Projects</h2>
-                <div class="projects__grid"></div>
-            </div>
-        </section>
-    </template>
-
+    <hero-component></hero-component>
+    <about-component></about-component>
     <project-list></project-list>
 
-    <template id="blog-template">
-        <section class="blog section" id="blog">
-            <div class="blog__container">
-                <h2 class="blog__title">Blog</h2>
-                <div class="blog__grid"></div>
-            </div>
-        </section>
-    </template>
+
 
     <blog-list></blog-list>
 
-    <section class="contact section" id="contact">
-        <div class="contact__container">
-            <h2 class="contact__title">Contact</h2>
-
-            <form action="#" class="contact-form" id="contact-form">
-                <div class="contact-form__group">
-                    <label for="name" class="contact-form__label">Name</label>
-                    <input type="text" id="name" name="name" class="contact-form__input" placeholder="Your name"
-                        required>
-                </div>
-
-                <div class="contact-form__group">
-                    <label for="email" class="contact-form__label">Email</label>
-                    <input type="email" id="email" name="email" class="contact-form__input"
-                        placeholder="Your email address" required>
-                </div>
-
-                <div class="contact-form__group">
-                    <label for="subject" class="contact-form__label">Subject</label>
-                    <input type="text" id="subject" name="subject" class="contact-form__input"
-                        placeholder="Subject of your message" required>
-                </div>
-
-                <div class="contact-form__group">
-                    <label for="message" class="contact-form__label">Message</label>
-                    <textarea id="message" name="message" class="contact-form__textarea" placeholder="Your message"
-                        required></textarea>
-                </div>
-
-                <button type="submit" class="contact-form__button">Send Message</button>
-
-                <div class="contact-form__message contact-form__message--success" id="success-message">
-                    Message sent successfully!
-                </div>
-            </form>
-        </div>
-    </section>
+    <contact-component></contact-component>
 
 </body>
 
